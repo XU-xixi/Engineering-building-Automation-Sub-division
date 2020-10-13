@@ -1,0 +1,21 @@
+#include<iostream>
+int Ma(int);
+
+int main()
+{
+    using namespace std;
+    int ma;
+    cout << "please enter the distance in LONG:";
+    int LONG;
+    cin >> LONG;
+    cout << endl;
+    ma = Ma(LONG);
+    cout << LONG << " long =" << ma << " ma";
+    cin.get();
+    cin.get();
+    return 0;
+}
+int Ma(int L)
+{
+    return 220*L;
+}

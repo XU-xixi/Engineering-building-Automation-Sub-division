@@ -1,0 +1,19 @@
+#include<iostream>
+double Light(double);
+int main()
+{
+    using namespace std;
+    cout << "Enter the number of light years:";
+    double light;
+    cin >> light;
+    double astronomical;
+    astronomical = Light(light);
+    cout << light << " light years = " << astronomical << " astronomical units";
+    cin.get();
+    cin.get();
+    return 0;
+}
+double Light(double A)
+{
+    return A*63240;
+}

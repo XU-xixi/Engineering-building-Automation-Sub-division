@@ -1,0 +1,19 @@
+#include<iostream>
+double Fah(double);
+int main()
+{
+    using namespace std;
+    cout << "Please  enter a Celsius value:";
+    double celsius;
+    cin >> celsius;
+    double Fahrenheit;
+    Fahrenheit = Fah(celsius);
+    cout << celsius << " degrees Celsius is " << Fahrenheit << " degrees Fahrenheit";
+    cin.get();
+    cin.get();
+    return 0;
+}
+double Fah(double C)
+{
+    return 1.8*C+32;
+}

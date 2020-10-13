@@ -1,0 +1,21 @@
+#include<iostream>
+int mon(int);
+
+int main()
+{
+    using namespace std;
+    cout << "Enter your age:";
+    int AGE;
+    cin >> AGE;
+    int Mon;
+    Mon = mon(AGE);
+    cout << AGE << " age include " << Mon << " month";
+    cin.get();
+    cin.get();
+    return 0;
+}
+
+int mon(int A)
+{
+    return 12*A;
+}

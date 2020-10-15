@@ -1,0 +1,26 @@
+#include<iostream>
+const int feet_inches = 12;
+const double inches_M = 0.0254;
+const double pounds_kg = 1/2.2;
+int main()
+{
+    using namespace std;
+    int feet;
+    int inches;
+    double pouds;
+    double height;
+    double weight;
+    cout << "Enter your height follow the feet inches." << endl;
+    cout << "____feet\b\b\b\b\b\b\b\b";
+    cin >> feet;
+    cout << "____inches\b\b\b\b\b\b\b\b\b\b\b\b" ;
+    cin >> inches;
+    cout << "Enter yout Weight." << "____pounds\b\b\b\b\b\b\b\b\b\b";
+    cin >> pouds;
+    height = (feet*feet_inches + inches) * inches_M;
+    weight = pouds * pounds_kg;
+    cout << "Your height is " << height << "M" << endl << "Your weight is " << weight << "kg";
+    cin.get();
+    cin.get();
+    return 0;
+}

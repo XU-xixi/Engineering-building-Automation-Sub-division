@@ -1,0 +1,35 @@
+#include<iostream>
+int main()
+{
+    using namespace std;
+    int ch;
+    int mile;
+    int gallon;
+    double mile_gallon;
+    int kilometer;
+    int liter;
+    double kilometer_liter;
+    cout << "If you want choose miles of gallons,choose 1,else if you want choose kilometer liters,choose 0";
+    cout << endl << "Please enter your choose: ";
+    cin >> ch;
+    if (ch == 1)
+    {
+        cout << "Enter your miles and gallons: " << endl << "___miles\b\b\b\b\b\b\b\b";
+        cin >> mile;
+        cout << "___gallons\b\b\b\b\b\b\b\b\b\b";
+        cin >> gallon;
+        mile_gallon = double (mile) / gallon;
+        cout << mile_gallon << " (mile/gallon)\n";
+    }
+    else
+    {
+        cout << "Enter your kilometer and liters" << endl << "___kilometer\b\b\b\b\b\b\b\b\b\b\b\b";
+        cin >> kilometer;
+        cout << "___liter\b\b\b\b\b\b\b\b";
+        cin >> liter;
+        kilometer_liter = double (liter) / kilometer * 100;
+        cout << kilometer_liter << " (Per 100 kilometer/liter)\n";
+    }
+    system("pause");
+    return 0;
+}

@@ -1,0 +1,16 @@
+#include<iostream>
+const double km_mile = 62.14;
+const double gallon_liter = 3.785;
+int main()
+{
+    double kilometer_liter;
+    double gallon_mile;
+    using namespace std;
+    cout << "Enter your (Per 100 kilometer/liter)" << endl;
+    cout << "___(Per 100 kilometer/liter)\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b";
+    cin >> kilometer_liter;
+    gallon_mile = 1 / kilometer_liter * gallon_liter * km_mile; // m/g = [1 / (l/100k)] * (l/g) * (m/100k)
+    cout << kilometer_liter << "(Per 100 kilometer/liter) = " << gallon_mile << "(mpg)\n";
+    system("pause");
+    return 0;
+}

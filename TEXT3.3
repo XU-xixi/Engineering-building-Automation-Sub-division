@@ -1,0 +1,19 @@
+#include<iostream>
+#include<cstring>
+int main()
+{
+    using namespace std;
+    const int ArSize = 20;
+    char Firstname[ArSize];
+    char Lastname[ArSize];
+    char zhong[3] = ", ";
+    cout << "Enter your first name: ";
+    cin.get(Firstname,ArSize).get();
+    cout << "Enter your last name: ";
+    cin.get(Lastname,ArSize).get();
+    strcat(Lastname,zhong);
+    strcat(Lastname,Firstname);
+    cout << "Here's the information in a single string: " << Lastname << "\n";
+    system("pause");
+    return 0;
+}

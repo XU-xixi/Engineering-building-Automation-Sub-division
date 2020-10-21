@@ -1,0 +1,23 @@
+#include<iostream>
+struct CandyBar
+{
+    char name[20];
+    double weight;
+    int calories;
+}snack;
+
+int main()
+{
+    using namespace std;
+    CandyBar snack = 
+    {
+        "Mocha Munch",
+        2.3,
+        350
+    };
+    cout << "The name is: " << snack.name << endl;
+    cout << "The weight is: " << snack.weight << endl;
+    cout << "The calories is: " << snack.calories << endl;
+    system("pause");
+    return 0;
+}

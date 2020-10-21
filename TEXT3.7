@@ -1,0 +1,23 @@
+#include<iostream>
+#include<string>
+struct pizza
+{
+    std::string name;
+    double diameter;
+    double weight;
+}Pizza;
+int main()
+{
+    using namespace std;
+    cout << "Enter the pizza name: ";
+    cin >> Pizza.name;
+    cout << "Enter the pizza diameter(cm): ";
+    cin >> Pizza.diameter;
+    cout << "Enter the pizza weight(g): ";
+    cin >> Pizza.weight;
+    cout << "The name is: " << Pizza.name << endl;
+    cout << "The weight is: " << Pizza.weight << endl;
+    cout << "The diameter is: " << Pizza.diameter << endl;
+    system("pause");
+    return 0;
+}

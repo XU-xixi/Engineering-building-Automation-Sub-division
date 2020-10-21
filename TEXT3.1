@@ -1,0 +1,24 @@
+#include<iostream>
+int main()
+{
+    using namespace std;
+    const int ArSize = 20;
+    char Firstname[ArSize];
+    char Lastname[ArSize];
+    char grade;
+    int age;
+    cout << "What is your first name? ";
+    cin.get(Firstname,ArSize).get();
+    cout << "What is your last name? ";
+    cin.get(Lastname,ArSize).get();
+    cout << "What letter grede do you deserve? ";
+    cin >> grade;
+    cout << "What is your age? ";
+    cin >> age;
+    grade = grade + 1;
+    cout << "Name: " << Lastname << ", " << Firstname << endl;
+    cout << "Grade: " << grade << endl;
+    cout << "Age: " << age << endl;
+    system("pause");
+    return 0;
+}

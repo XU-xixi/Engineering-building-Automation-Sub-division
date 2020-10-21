@@ -1,0 +1,19 @@
+#include<iostream>
+//#include<string>
+int main()
+{
+    using namespace std;
+    string Firstname;
+    string Lastname;
+    string douhao;
+    cout << "Enter your first name: ";
+    getline(cin,Firstname);
+    cout << "Enter your last name: ";
+    getline(cin,Lastname);
+    douhao = ", ";
+    Lastname = Lastname + douhao;
+    Lastname = Lastname + Firstname;
+    cout << "Here's the information in a single string: " << Lastname << endl;
+    system("pause");
+    return 0;
+}

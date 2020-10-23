@@ -1,0 +1,19 @@
+#include<iostream>
+#include<array>
+int main()
+{
+    using namespace std;
+    array<double,3> results;
+    cout << "Enter the first results(s): ";
+    cin >> results[0];
+    cout << "Enter the second results(s): ";
+    cin >> results[1];
+    cout << "Enter the third results(s): ";
+    cin >> results[2];
+    double average;
+    average = (results[0] + results[1] + results[2]) / 3;
+    cout << "The number of is : three" << "\n";
+    cout << "The average results is : " << average << endl;
+    system("pause");
+    return 0;
+}

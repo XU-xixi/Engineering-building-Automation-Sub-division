@@ -1,0 +1,22 @@
+#include<iostream>
+const double money = 100;
+const double benli = 0.1;
+const double fuli = 0.05;
+int main()
+{
+    using namespace std;
+    double Daphne = money;
+    double Cleo = money;
+    int year = 0;
+    for(int i=1;Daphne>=Cleo;i++)
+    {
+        Daphne = Daphne + money*benli;
+        Cleo = Cleo + Cleo*fuli;
+        year = i;
+    };
+    cout << year << " years Cleo is superior to Daphne" << endl;
+    cout << "Daphne's assets are: " << Daphne << endl;
+    cout << "Cleo's assets are: " << Cleo << endl;
+    system("pause");
+    return 0;
+}

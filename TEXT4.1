@@ -1,0 +1,19 @@
+#include<iostream>
+int main()
+{
+    using namespace std;
+    cout << "Please enter two number,";
+    cout << "Please enter the smaller number: " << endl;
+    int small = 0;
+    int big = 0;
+    int sum = 0;
+    cin >> small;
+    cout << "Please enter the bigger number: " << endl;
+    cin >> big;
+    for (int i = small; i <= big ; i++)
+    {
+        sum = sum + i;
+    };
+    cout << small << " and " << big << " sum is: " << sum << endl;
+    system("pause");
+}

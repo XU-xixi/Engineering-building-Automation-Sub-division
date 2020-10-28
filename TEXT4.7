@@ -1,0 +1,33 @@
+#include<iostream>
+#include<string>
+const int Arsize = 20;
+struct car
+{
+    char name[Arsize];
+    int year;
+};
+int main()
+{
+    using namespace std;
+    int number = 0;
+    cout << "How many cars do you wish to catalog?";
+    cin >> number;
+    cin.get();            //数字和字母之间要加cin.get()
+    car *Car = new car[number];
+    for (int i=0;i<number;i++)
+    {
+        cout << "Car #" << (i+1) << ":" << endl;
+        cout << "Please enter the make: ";
+        cin.getline((Car+i)->name,20);
+        cout << "Please enter the year made: ";
+        cin >> (Car+i)->year;
+        cin.get();        //数字和字母之间要加cin.get()
+    };
+    cout << "Here is your collection:" << endl;
+    for (int j=0;j<number;j++)
+    {
+        cout << (Car+j)->year << " " << (Car+j)->name << endl;
+    }
+    system("pause");
+    return 0;
+}
